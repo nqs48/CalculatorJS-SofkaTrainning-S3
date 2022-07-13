@@ -85,6 +85,12 @@ Nestor Quiroga Suarez
 Jr. Software Developer
 ```
 
+```
+Julian Lasso
+Technical Coach
+```
+
+
 -   LinkedIn => [Nestor Quiroga Suárez](https://www.linkedin.com/in/nqs48/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>

@@ -1,4 +1,18 @@
-import { fnPercentKey, fnOneKey } from "./percent-key.controller.js";
+import {
+    fnPercentKey,
+    fnKeySeven,
+    fnKeyFour,
+    fnKeyOne,
+    fnKeyZero,
+    fnKeyEight,
+    fnKeyFive,
+    fnKeyTwo,
+    fnKeyDecimal,
+    fnKeyNine,
+    fnKeySix,
+    fnKeyThree,
+    fnKeyEquals,
+} from "./key.controller.js";
 
 export const calculatorView = () => {
     // Selección del contenedor principal
@@ -57,68 +71,82 @@ export const calculatorView = () => {
     keyDelete.innerHTML = "&#8592;"; // keyPercent.textContent = "&#8592;";
     // <button class="calculator-key key-delete" id="delete">←</button>
 
+
     //Second Row
     const keySeven = document.createElement("button");
     keySeven.classList.add("calculator-key", "key-seven");
     keySeven.id = "seven";
+    keySeven.addEventListener("click", fnKeySeven);
     keySeven.textContent = "7";
 
     const keyFour = document.createElement("button");
     keyFour.classList.add("calculator-key", "key-four");
     keyFour.id = "four";
+    keyFour.addEventListener("click", fnKeyFour);
     keyFour.textContent = "4";
 
     const keyOne = document.createElement("button");
     keyOne.classList.add("calculator-key", "key-one");
     keyOne.id = "one";
     keyOne.textContent = "1";
+    keyOne.addEventListener("click", fnKeyOne);
 
     const keyZero = document.createElement("button");
     keyZero.classList.add("calculator-key", "key-zero");
     keyZero.id = "zero";
+    keyZero.addEventListener("click", fnKeyZero);
     keyZero.textContent = "0";
+
 
     // //Third Row
     const keyEight = document.createElement("button");
     keyEight.classList.add("calculator-key", "key-eight");
     keyEight.id = "eight";
-    keyEight.textContent = "7";
+    keyEight.addEventListener("click", fnKeyEight);
+    keyEight.textContent = "8";
 
     const keyFive = document.createElement("button");
     keyFive.classList.add("calculator-key", "key-five");
     keyFive.id = "five";
-    keyFive.textContent = "4";
+    keyFive.addEventListener("click", fnKeyFive);
+    keyFive.textContent = "5";
 
     const keyTwo = document.createElement("button");
-    keyOne.classList.add("calculator-key", "key-two");
-    keyOne.id = "two";
-    keyOne.addEventListener("click", fnOneKey);
-    keyOne.textContent = "1";
+    keyTwo.classList.add("calculator-key", "key-two");
+    keyTwo.id = "two";
+    keyTwo.addEventListener("click", fnKeyTwo);
+    keyTwo.textContent = "2";
 
     const keyDecimal = document.createElement("button");
     keyDecimal.classList.add("calculator-key", "key-decimal");
     keyDecimal.id = "decimal";
+    keyDecimal.addEventListener("click", fnKeyDecimal);
     keyDecimal.textContent = ".";
+
 
     //Four Row
     const keyNine = document.createElement("button");
     keyNine.classList.add("calculator-key", "key-nine");
     keyNine.id = "nine";
+    keyNine.addEventListener("click", fnKeyNine);
     keyNine.textContent = "9";
 
     const keySix = document.createElement("button");
     keySix.classList.add("calculator-key", "key-six");
     keySix.id = "six";
+    keySix.addEventListener("click", fnKeySix);
     keySix.textContent = "6";
 
     const keyThree = document.createElement("button");
     keyThree.classList.add("calculator-key", "key-three");
     keyThree.id = "three";
+    keyThree.addEventListener("click", fnKeyThree);
     keyThree.textContent = "3";
 
     const keyEquals = document.createElement("button");
     keyEquals.classList.add("calculator-key", "key-equals");
     keyEquals.id = "equals";
+    keyEquals.addEventListener("click", fnKeyEquals);
     keyEquals.textContent = "=";
 
     //Five Row
@@ -142,7 +170,8 @@ export const calculatorView = () => {
     keyDivide.id = "divide";
     keyDivide.textContent = "/";
 
-    // Key row
+
+    //Containers Kays Rows
     let calculatorKeysRow = document.createElement("div");
     calculatorKeysRow.classList.add("calculator-keys-row");
     calculatorKeysRow.append(keyClear, keySign, keyPercent, keyDelete);
@@ -153,11 +182,11 @@ export const calculatorView = () => {
 
     let calculatorKeysRowThree = document.createElement("div");
     calculatorKeysRowThree.classList.add("calculator-keys-row");
-    calculatorKeysRowThree.append(keyEight, keySix, keyThree, keyEquals);
+    calculatorKeysRowThree.append(keyEight, keyFive, keyTwo, keyEquals);
 
     let calculatorKeysRowFour = document.createElement("div");
     calculatorKeysRowFour.classList.add("calculator-keys-row");
-    calculatorKeysRowFour.append(keyEight, keyFive, keyTwo, keyDecimal);
+    calculatorKeysRowFour.append(keyNine, keySix, keyThree, keyDecimal);
 
     let calculatorKeysRowFive = document.createElement("div");
     calculatorKeysRowFive.classList.add("calculator-keys-row");
