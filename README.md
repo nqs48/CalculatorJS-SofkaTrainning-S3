@@ -10,7 +10,7 @@ Calculator model made in javascript to perform technical fixes.
 
 This project is based on a calculator made in javascript, where the objective of this practice is to make some changes to the code, in order to make it functional.
 
-### [https://adice-game.herokuapp.com/](https://adice-game.herokuapp.com/)
+### []()
 
 ---
 
